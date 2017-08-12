@@ -9,6 +9,8 @@ class TestGuest < MiniTest::Test
     @guest_2 = Guest.new("Tom")
     @guest_3 = Guest.new("John")
     @guest_4 = Guest.new("Sarah")
+    @guest_5 = Guest.new("Adam")
+    @guest_6 = Guest.new("Louise")
   end
 
   def test_guests

@@ -10,7 +10,11 @@ class Room
   end
 
   def add_singer(guest)
-    @singers << guest
+    if @singers.length < @capacity
+      @singers << guest
+    else
+      return "I'm sorry, Room #{@number} is full at the moment.   Please try later."
+    end
   end
 
   def remove_singer(guest)
